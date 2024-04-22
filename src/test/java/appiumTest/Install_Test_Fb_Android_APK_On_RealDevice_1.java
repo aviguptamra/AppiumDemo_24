@@ -27,23 +27,23 @@ public class Install_Test_Fb_Android_APK_On_RealDevice_1 {
       URL url= URI.create("http://127.0.0.1:4723/wd/hub").toURL(); 
       AndroidDriver driver=new AndroidDriver(url,dc);
       
-      Thread.sleep(9000);
+      Thread.sleep(3000);
       
       driver.findElement(ByAndroidUIAutomator.id("com.facebook.mlite:id/sso_switch_account_button")).click();
       
-      Thread.sleep(9000);
+       Thread.sleep(3000);
 
       driver.findElement(ByAndroidUIAutomator.accessibilityId("Email or phone number")).sendKeys("appium@gmail.com");
       
-   Thread.sleep(9000);
+    Thread.sleep(3000);
       
       driver.findElement(AppiumBy.accessibilityId("Password")).sendKeys("appium@1234");
       
-      Thread.sleep(9000);
+      Thread.sleep(3000);
       
       driver.findElement(By.id("com.facebook.mlite:id/login_login_button")).click();
       
-      Thread.sleep(9000);
+       Thread.sleep(3000);
       
       driver.quit();
       
